@@ -30,6 +30,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+            <intent-filter android:label="@string/action_open_with">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http"
+                    android:host="nxtb.it"
+                    android:pathPrefix="/" />
+            </intent-filter>
         </activity>
         <activity android:name=".ReturnActivity"
             android:label="@string/title_activity_return">
